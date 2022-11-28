@@ -48,10 +48,9 @@ public class MainActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         closeBtn = findViewById(R.id.imageView1o1);
 
-        loginEmail="Dillihaartview@dillihaart.com";
-        loginPassword="Dillihaart@2012";
-        sign_in_user(loginEmail, loginPassword);
-        if (mUser != null) {
+        //sign_in_user(loginEmail, loginPassword);
+
+        if (1==1) {
             for (int record =1; record <4; record++) {
                 if (record == 1) {
                     keyOfrecordToFetch = "" + record;
