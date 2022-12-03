@@ -2,138 +2,55 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/contLayout1o1"
         android:layout_width="match_parent"
-        android:layout_height="175dp"
+        android:layout_height="match_parent"
         android:visibility="visible">
 
-        <ImageView
-            android:id="@+id/imageView1o1"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginBottom="8dp"
+        <ImageButton
+            android:id="@+id/imageButtonFirst"
+            android:layout_width="135dp"
+            android:layout_height="14dp"
+            android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
             app:srcCompat="@drawable/dhlogonobkgrnd" />
-
-        <TextView
-            android:id="@+id/textView1o1"
-            android:layout_width="225dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="16dp"
-            android:text="TextView"
-            android:textColor="#070707"
-            android:textSize="24sp"
-            app:layout_constraintStart_toEndOf="@+id/imageView1o1"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView2o1"
-            android:layout_width="220dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="44dp"
-            android:text="TextView"
-            android:textColor="#070707"
-            android:textSize="14sp"
-            app:layout_constraintStart_toEndOf="@+id/imageView1o1"
-            app:layout_constraintTop_toBottomOf="@+id/textView1o1" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/contLayout2o2"
-        android:layout_width="match_parent"
-        android:layout_height="175dp"
-        android:layout_marginTop="16dp"
-        android:visibility="visible"
-        app:layout_constraintTop_toBottomOf="@id/contLayout1o1"
-        tools:visibility="visible">
 
         <ImageView
-            android:id="@+id/imageView1o2"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/imageViewFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/buttonShowCupons"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/dhlogonobkgrnd" />
+            app:layout_constraintVertical_bias="0.273"
+            app:srcCompat="@drawable/f1" />
 
-        <TextView
-            android:id="@+id/textView1o2"
-            android:layout_width="225dp"
+        <Button
+            android:id="@+id/buttonShowCupons"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="16dp"
-            android:text="TextView"
-            android:textColor="#070707"
-            android:textSize="24sp"
-            app:layout_constraintStart_toEndOf="@+id/imageView1o2"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView2o2"
-            android:layout_width="220dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="44dp"
-            android:text="TextView"
-            android:textColor="#070707"
-            android:textSize="14sp"
-            app:layout_constraintStart_toEndOf="@+id/imageView1o2"
-            app:layout_constraintTop_toBottomOf="@+id/textView1o2" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/contLayout3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/contLayout2">
-
-        <ImageView
-            android:id="@+id/imageView1o3"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/white"
+            android:text="SHOW ITEMS"
+            android:textColor="@color/black"
+            android:textSize="28sp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/dhlogonobkgrnd" />
-
-        <TextView
-            android:id="@+id/textView1o3"
-            android:layout_width="225dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="16dp"
-            android:text="TextView"
-            android:textColor="#070707"
-            android:textSize="24sp"
-            app:layout_constraintStart_toEndOf="@+id/imageView1o3"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView2o3"
-            android:layout_width="220dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="44dp"
-            android:text="TextView"
-            android:textColor="#070707"
-            android:textSize="14sp"
-            app:layout_constraintStart_toEndOf="@+id/imageView1o3"
-            app:layout_constraintTop_toBottomOf="@+id/textView1o3" />
+            app:layout_constraintTop_toBottomOf="@+id/imageViewFirst" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </LinearLayout>
